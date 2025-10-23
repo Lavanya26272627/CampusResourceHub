@@ -2,12 +2,12 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/front/index.html"
+      "destination": "/index.html"
     }
   ],
   "builds": [
     {
-      "src": "front/package.json",
+      "src": "/package.json",
       "use": "@vercel/static-build",
       "config": {
         "distDir": "build"
