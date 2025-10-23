@@ -2,17 +2,17 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/frontend-react/index.html"
+      "destination": "/front/index.html"
     }
   ],
   "builds": [
     {
-      "src": "frontend-react/package.json",
+      "src": "front/package.json",
       "use": "@vercel/static-build",
       "config": {
         "distDir": "build"
       }
     }
   ],
-  "installCommand": "npm install --prefix frontend-react && npm install --prefix backend"
+  "installCommand": "npm install --prefix front && npm install --prefix backend"
 }
